@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(135deg, #000080 0%, #00a2c5 100%);
+    min-height: 100vh;
+}
+
+.container, .Hindia {
+    text-align: center;
+}
+
+.Panggung {
+    color: rgb(255, 255, 255);
+}
+
+.tentang img{
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.photo-card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.photo-card:hover {
+    transform: translateY(-15px) scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 162, 197, 0.4);
+}
+
+
+.section {
+    padding: 28px 16px;
+}
+
+.section--hero {
+    background: linear-gradient(180deg, rgba(0,0,128,0.04), rgba(0,162,197,0.03));
+}
+
+.section--content {
+    background: linear-gradient(180deg, rgba(0,0,128,0.02), rgba(0,162,197,0.04));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    padding: 40px 16px;
+}
+
+.section--history {
+    background: linear-gradient(180deg, rgba(0,0,128,0.02), rgba(0,162,197,0.04));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    padding: 40px 16px;
+}
+
+
+.card {
+    background: rgba(255,255,255,0.06);
+    border-radius: 12px;
+    padding: 18px 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+
+.card {
+    text-align: center;
+}
+
+.card .deskripsi p {
+    text-align: center;
+    padding-left: 0;
+}
+
+.card .sejarah p {
+    text-align: center;
+    padding-left: 0;
+}
+
+
+.card .lengkap {
+    display: block;
+    text-align: left;
+    padding-left: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.card .lengkap li {
+    gap: 6px;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #ffffff;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.line {
+    border: none;
+    height: 2px;
+    background-color: #ffffff;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.deskripsi {
+    color: white;
+    font-size: 16px;
+    margin: 20px;
+}
+
+.sejarah {
+    color: white;
+    font-size: 16px;
+    margin: 20px;
+}
+
+.lengkap {
+    color: white;
+    font-size: 16px;
+    margin: 20px;
+}
+
+.lengkap li {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2px;
+    margin: 1px 0;
+}
+
+.lengkap .label {
+    width: 70px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.lengkap .colon {
+    width: 6px;
+    text-align: center;
+}
+
+.lengkap .value {
+    flex: 1;
+    text-align: left;
+}
+
+.deskripsi ul {
+    display: block;
+    text-align: left;
+    margin: 10px auto;
+    padding-left: 8px;
+    max-width: 380px;
+}
+
+.deskripsi p {
+    text-align: left;
+    margin: 10px 0 10px 0;
+    padding-left: 8px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.sejarah p {
+    text-align: left;
+    margin: 10px 0 10px 0;
+    padding-left: 8px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.album-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.album-gallery img {
+    width: 150px;
+    height: 150px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 162, 197, 0.3);
+    transition: all 0.3s ease;
+}
+
+.album-gallery img:hover {
+    transform: scale(1.08) translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 162, 197, 0.5);
+}
+
+
+.tooltip-kecil {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip-kecil .tooltiptext {
+    visibility: hidden;
+    width: 320px;
+    background: linear-gradient(to left, #000080 0%, #00a2c5 100%);
+    color: white;
+    text-align: left;
+    border-radius: 0;
+    padding: 14px 16px;
+    position: absolute;
+    z-index: 10;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.14s ease, transform 0.14s ease;
+    font-size: 14px;
+    line-height: 1.45;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    white-space: normal;
+    border: 1px solid rgba(0,0,0,0.09);
+    box-sizing: border-box;
+}
+
+.tooltip-kecil:hover .tooltiptext,
+.tooltip-kecil:focus-within .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(-6px);
+}
+
+.album-item { position: relative; display: inline-block; }
+
+.album-item img { display: block; border-radius: 8px; }
+
+a {
+    color: white;
+    text-decoration: none;
+}
